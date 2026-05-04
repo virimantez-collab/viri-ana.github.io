@@ -6,78 +6,96 @@
 <title>Viri & Ana</title>
 
 <style>
-    body {
-        margin: 0;
-        font-family: 'Arial', sans-serif;
-        background-color: #f5f7f8;
-        line-height: 1.6;
-    }
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #f4f7f9;
+    line-height: 1.6;
+}
 
-    header {
-        background: #0B2545;
-        color: white;
-        padding: 60px 20px;
-        text-align: center;
-    }
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #0B2545, #13315c);
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
 
-    header h1 {
-        font-size: 2.8em;
-        margin: 0;
-    }
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
 
-    header p {
-        color: #a8dadc;
-        margin-top: 10px;
-        font-size: 1.2em;
-    }
+header p {
+    color: #a8dadc;
+    font-size: 1.2em;
+}
 
-    .btn {
-        display: inline-block;
-        margin-top: 20px;
-        padding: 12px 25px;
-        background: #3CBCC3;
-        color: white;
-        text-decoration: none;
-        border-radius: 25px;
-        font-weight: bold;
-    }
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 30px;
+    background: #3CBCC3;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+}
 
-    section {
-        padding: 50px 20px;
-        max-width: 1000px;
-        margin: auto;
-    }
+/* SECTIONS */
+section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 50px 20px;
+}
 
-    h2 {
-        color: #0B2545;
-    }
+h2 {
+    color: #0B2545;
+}
 
-    .services {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
-    }
+/* CARDS */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
 
-    .card {
-        background: white;
-        padding: 20px;
-        border-radius: 12px;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    }
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
 
-    .highlight {
-        background: #e0fbfc;
-        padding: 20px;
-        border-left: 5px solid #3CBCC3;
-        border-radius: 10px;
-    }
+/* DESTACADO */
+.highlight {
+    background: #e0fbfc;
+    padding: 25px;
+    border-left: 6px solid #3CBCC3;
+    border-radius: 10px;
+}
 
-    footer {
-        background: #0B2545;
-        color: white;
-        text-align: center;
-        padding: 20px;
-    }
+/* FOOTER */
+footer {
+    background: #0B2545;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* WHATSAPP */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    font-size: 26px;
+    padding: 16px;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
 </style>
 
 </head>
@@ -86,54 +104,85 @@
 
 <header>
     <h1>Viri & Ana</h1>
-    <p>Bienestar emocional & crecimiento digital</p>
+    <p>Bienestar emocional, aprendizaje y crecimiento digital</p>
     <a href="#contacto" class="btn">Agenda tu asesoría</a>
 </header>
 
 <section>
     <h2>¿Quiénes somos?</h2>
     <p>
-        En <strong>Viri & Ana</strong> creemos que el crecimiento personal y profesional van de la mano.
-        Combinamos la psicología con soluciones digitales para ayudarte a avanzar,
-        tomar decisiones con claridad y construir una vida y un negocio más sólido.
+        En <strong>Viri & Ana</strong> acompañamos a personas en su desarrollo personal, académico y profesional.
+        Integramos la psicología, la educación y el mundo digital para generar cambios reales,
+        sostenibles y significativos.
     </p>
 </section>
 
 <section>
     <h2>Nuestra misión</h2>
     <div class="highlight">
-        <p>
-            Acompañar a las personas en su proceso de transformación, brindando herramientas emocionales
-            y digitales que les permitan sentirse mejor, tomar acción y lograr sus objetivos.
-        </p>
+        Impulsar el crecimiento de cada persona desde un enfoque humano, respetuoso e integral,
+        ayudando a fortalecer su confianza, sus habilidades y su proyecto de vida.
     </div>
 </section>
 
 <section>
     <h2>Servicios</h2>
-    <div class="services">
+
+    <div class="grid">
 
         <div class="card">
-            <h3>Psicología</h3>
+            <h3>Psicología Psicopedagógica</h3>
             <p>
-                Espacio seguro de acompañamiento emocional donde trabajamos temas como ansiedad,
-                toma de decisiones, autoestima y crecimiento personal.
+                Atención en línea con enfoque conductual e integral, dirigida desde primaria hasta nivel universitario.
+                Trabajamos el desarrollo académico, emocional y conductual de cada estudiante.
+            </p>
+
+            <ul>
+                <li>✔ Desarrollo de hábitos y autonomía</li>
+                <li>✔ Atención, concentración y comprensión</li>
+                <li>✔ Acompañamiento emocional</li>
+                <li>✔ Refuerzo positivo y motivación</li>
+                <li>✔ Enfoque inclusivo y libre de juicios</li>
+            </ul>
+
+            <p>
+                Un espacio seguro donde cada persona puede desarrollarse con confianza, respeto y autenticidad.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Clases de Inglés para Niños</h3>
+            <p>
+                Clases dinámicas, personalizadas y divertidas, diseñadas para que los niños realmente aprendan.
+            </p>
+
+            <ul>
+                <li>✔ Aprendizaje a través de juegos</li>
+                <li>✔ Material visual y creativo</li>
+                <li>✔ Atención paciente y cercana</li>
+                <li>✔ Clases adaptadas al ritmo del niño</li>
+            </ul>
+
+            <p>
+                Enfocadas en generar confianza, motivación y resultados reales.
             </p>
         </div>
 
         <div class="card">
             <h3>Diseño de Páginas Web</h3>
             <p>
-                Creamos páginas modernas y funcionales que te ayudan a atraer clientes
-                y posicionar tu negocio en internet.
+                Creamos páginas modernas, funcionales y enfocadas en atraer clientes.
             </p>
-        </div>
 
-        <div class="card">
-            <h3>Asesoría Integral</h3>
+            <ul>
+                <li>✔ Diseño profesional</li>
+                <li>✔ Optimización para ventas</li>
+                <li>✔ Adaptadas a tu negocio</li>
+                <li>✔ Presencia digital estratégica</li>
+            </ul>
+
             <p>
-                Te guiamos para estructurar tu idea, mejorar tu presencia digital y
-                desarrollar una estrategia clara para crecer.
+                Ideal para emprendedores que quieren crecer en internet.
             </p>
         </div>
 
@@ -141,41 +190,33 @@
 </section>
 
 <section>
-    <h2>Consejos para tu bienestar</h2>
-
-    <div class="card">
-        <p>💡 Dedica tiempo a escucharte: entender tus emociones es el primer paso para gestionarlas.</p>
-    </div>
-
-    <div class="card">
-        <p>💡 No tienes que hacerlo todo solo: pedir ayuda también es avanzar.</p>
-    </div>
-
-    <div class="card">
-        <p>💡 El crecimiento no es perfecto: es constante y realista.</p>
-    </div>
-
-</section>
-
-<section>
-    <h2>¿Qué queremos lograr?</h2>
+    <h2>Nuestro enfoque</h2>
     <p>
-        Nuestro objetivo es impactar positivamente la vida de las personas,
-        ayudándolas a sentirse mejor consigo mismas y a construir proyectos
-        digitales que realmente funcionen.
+        Creemos que cada persona es única. Por eso, nuestro trabajo se basa en adaptar cada proceso
+        según las necesidades, ritmo y contexto de cada cliente.
     </p>
+
+    <div class="highlight">
+        No trabajamos desde el juicio, sino desde la comprensión, el acompañamiento y el crecimiento real.
+    </div>
 </section>
 
 <section id="contacto">
     <h2>Contacto</h2>
-    <p>📲 WhatsApp: 000 000 0000</p>
-    <p>📧 Email: contacto@viriayana.com</p>
-    <p>📍 Atención en línea</p>
+    <p>📲 WhatsApp: 3053455976</p>
+    <p>📧 Psicología: acastano.suarez@gmail.com</p>
+    <p>📧 Inglés: virimantez@gmail.com</p>
+    <p>📍 Atención 100% en línea</p>
 </section>
 
 <footer>
-    <p>© 2026 Viri & Ana | Psicología & Desarrollo Web</p>
+    <p>© 2026 Viri & Ana | Bienestar & Desarrollo</p>
 </footer>
+
+<!-- BOTÓN WHATSAPP -->
+<a href="https://wa.me/523053455976?text=Hola,%20quiero%20información%20sobre%20sus%20servicios" target="_blank" class="whatsapp">
+💬
+</a>
 
 </body>
 </html>
