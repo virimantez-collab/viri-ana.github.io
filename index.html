@@ -8,70 +8,87 @@
 <style>
 body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     background: #f4f7f9;
-    line-height: 1.6;
 }
 
 /* HEADER */
 header {
-    background: linear-gradient(135deg, #0B2545, #13315c);
+    background: linear-gradient(135deg, #0B2545, #1b3a6b);
     color: white;
     text-align: center;
-    padding: 70px 20px;
+    padding: 80px 20px;
 }
 
-header h1 {
-    font-size: 3em;
-    margin: 0;
+header img {
+    width: 120px;
+    margin-bottom: 15px;
 }
 
 header p {
     color: #a8dadc;
-    font-size: 1.2em;
 }
 
 .btn {
     display: inline-block;
-    margin-top: 25px;
-    padding: 14px 30px;
+    margin-top: 20px;
+    padding: 14px 28px;
     background: #3CBCC3;
     color: white;
     text-decoration: none;
     border-radius: 30px;
-    font-weight: bold;
 }
 
-/* SECTIONS */
+/* SECCIONES */
 section {
     max-width: 1100px;
     margin: auto;
-    padding: 50px 20px;
+    padding: 60px 20px;
 }
 
 h2 {
     color: #0B2545;
 }
 
-/* CARDS */
+/* IMÁGENES */
+.main-img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* GRID */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
 }
 
+/* CARDS */
 .card {
     background: white;
-    padding: 25px;
+    padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
 }
 
-/* DESTACADO */
-.highlight {
-    background: #e0fbfc;
-    padding: 25px;
-    border-left: 6px solid #3CBCC3;
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* TESTIMONIOS */
+.testimonial {
+    background: white;
+    padding: 20px;
+    border-left: 5px solid #3CBCC3;
+    margin-bottom: 15px;
     border-radius: 10px;
 }
 
@@ -93,8 +110,6 @@ footer {
     font-size: 26px;
     padding: 16px;
     border-radius: 50%;
-    text-decoration: none;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
 }
 </style>
 
@@ -103,120 +118,102 @@ footer {
 <body>
 
 <header>
+    <img src="logo.png">
     <h1>Viri & Ana</h1>
-    <p>Bienestar emocional, aprendizaje y crecimiento digital</p>
-    <a href="#contacto" class="btn">Agenda tu asesoría</a>
+    <p>Bienestar emocional y aprendizaje con sentido</p>
+
+    <a href="https://wa.me/523053455976?text=Hola,%20quiero%20agendar%20una%20asesoría" class="btn">
+        Agenda tu asesoría
+    </a>
 </header>
 
+<!-- HERO -->
 <section>
-    <h2>¿Quiénes somos?</h2>
+    <img src="hero.jpg" class="main-img">
+</section>
+
+<!-- INTRO -->
+<section>
+    <h2>Un acompañamiento diferente</h2>
     <p>
-        En <strong>Viri & Ana</strong> acompañamos a personas en su desarrollo personal, académico y profesional.
-        Integramos la psicología, la educación y el mundo digital para generar cambios reales,
-        sostenibles y significativos.
+        Integramos psicología y educación para generar cambios reales en el aprendizaje,
+        la confianza y el bienestar emocional.
     </p>
 </section>
 
-<section>
-    <h2>Nuestra misión</h2>
-    <div class="highlight">
-        Impulsar el crecimiento de cada persona desde un enfoque humano, respetuoso e integral,
-        ayudando a fortalecer su confianza, sus habilidades y su proyecto de vida.
-    </div>
-</section>
-
+<!-- SERVICIOS -->
 <section>
     <h2>Servicios</h2>
 
     <div class="grid">
 
         <div class="card">
+            <img src="psicologia.jpg">
             <h3>Psicología Psicopedagógica</h3>
             <p>
-                Atención en línea con enfoque conductual e integral, dirigida desde primaria hasta nivel universitario.
-                Trabajamos el desarrollo académico, emocional y conductual de cada estudiante.
-            </p>
-
-            <ul>
-                <li>✔ Desarrollo de hábitos y autonomía</li>
-                <li>✔ Atención, concentración y comprensión</li>
-                <li>✔ Acompañamiento emocional</li>
-                <li>✔ Refuerzo positivo y motivación</li>
-                <li>✔ Enfoque inclusivo y libre de juicios</li>
-            </ul>
-
-            <p>
-                Un espacio seguro donde cada persona puede desarrollarse con confianza, respeto y autenticidad.
+                Atención integral enfocada en desarrollo emocional, hábitos de estudio
+                y fortalecimiento de la confianza.
             </p>
         </div>
 
         <div class="card">
+            <img src="ingles.jpg">
             <h3>Clases de Inglés para Niños</h3>
             <p>
-                Clases dinámicas, personalizadas y divertidas, diseñadas para que los niños realmente aprendan.
-            </p>
-
-            <ul>
-                <li>✔ Aprendizaje a través de juegos</li>
-                <li>✔ Material visual y creativo</li>
-                <li>✔ Atención paciente y cercana</li>
-                <li>✔ Clases adaptadas al ritmo del niño</li>
-            </ul>
-
-            <p>
-                Enfocadas en generar confianza, motivación y resultados reales.
+                Clases dinámicas y personalizadas donde los niños aprenden jugando
+                y desarrollan confianza.
             </p>
         </div>
 
         <div class="card">
-            <h3>Diseño de Páginas Web</h3>
+            <img src="servicios.png">
+            <h3>Atención Integral Online</h3>
             <p>
-                Creamos páginas modernas, funcionales y enfocadas en atraer clientes.
-            </p>
-
-            <ul>
-                <li>✔ Diseño profesional</li>
-                <li>✔ Optimización para ventas</li>
-                <li>✔ Adaptadas a tu negocio</li>
-                <li>✔ Presencia digital estratégica</li>
-            </ul>
-
-            <p>
-                Ideal para emprendedores que quieren crecer en internet.
+                Acompañamiento cercano, flexible y adaptado a cada familia desde casa.
             </p>
         </div>
 
     </div>
 </section>
 
+<!-- DIFERENCIAL -->
 <section>
-    <h2>Nuestro enfoque</h2>
+    <h2>¿Qué nos hace diferentes?</h2>
     <p>
-        Creemos que cada persona es única. Por eso, nuestro trabajo se basa en adaptar cada proceso
-        según las necesidades, ritmo y contexto de cada cliente.
+        Nuestro enfoque es humano, inclusivo y personalizado.
+        No trabajamos desde el juicio, sino desde la comprensión,
+        la motivación y el desarrollo real.
     </p>
-
-    <div class="highlight">
-        No trabajamos desde el juicio, sino desde la comprensión, el acompañamiento y el crecimiento real.
-    </div>
 </section>
 
-<section id="contacto">
+<!-- TESTIMONIOS -->
+<section>
+    <h2>Testimonios</h2>
+
+    <div class="testimonial">
+        “Mi hijo ahora disfruta aprender y ha mejorado muchísimo.”
+    </div>
+
+    <div class="testimonial">
+        “Se nota el cambio en su confianza y organización.”
+    </div>
+
+</section>
+
+<!-- CONTACTO -->
+<section>
     <h2>Contacto</h2>
-    <p>📲 WhatsApp: 3053455976</p>
+    <p>📲 3053455976</p>
     <p>📧 Psicología: acastano.suarez@gmail.com</p>
     <p>📧 Inglés: virimantez@gmail.com</p>
     <p>📍 Atención 100% en línea</p>
 </section>
 
 <footer>
-    <p>© 2026 Viri & Ana | Bienestar & Desarrollo</p>
+    <p>© 2026 Viri & Ana</p>
 </footer>
 
-<!-- BOTÓN WHATSAPP -->
-<a href="https://wa.me/523053455976?text=Hola,%20quiero%20información%20sobre%20sus%20servicios" target="_blank" class="whatsapp">
-💬
-</a>
+<a href="https://wa.me/523053455976?text=Hola,%20quiero%20información" class="whatsapp">💬</a>
 
 </body>
 </html>
