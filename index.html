@@ -21,7 +21,6 @@
         color:#1f2d3d;
     }
 
-    /* NAV */
     .nav{
         position:fixed;
         top:0;
@@ -42,7 +41,6 @@
         font-size:0.9rem;
     }
 
-    /* HERO CON IMAGEN */
     .hero{
         height:100vh;
         background:
@@ -57,14 +55,8 @@
         padding:20px;
     }
 
-    .hero h1{
-        font-size:3rem;
-    }
-
-    .hero p{
-        margin-top:10px;
-        max-width:600px;
-    }
+    .hero h1{font-size:3rem;}
+    .hero p{margin-top:10px;max-width:600px;}
 
     .btn{
         margin-top:20px;
@@ -88,15 +80,9 @@
         transition:all 0.8s ease;
     }
 
-    section.show{
-        opacity:1;
-        transform:translateY(0);
-    }
+    section.show{opacity:1;transform:translateY(0);}
 
-    h2{
-        color:#0B2545;
-        margin-bottom:20px;
-    }
+    h2{color:#0B2545;margin-bottom:20px;}
 
     .grid{
         display:flex;
@@ -115,17 +101,9 @@
         transition:0.3s;
     }
 
-    .card img{
-        width:100%;
-        height:160px;
-        object-fit:cover;
-        border-radius:12px;
-        margin-bottom:10px;
-    }
-
+    .card img{width:100%;height:160px;object-fit:cover;border-radius:12px;margin-bottom:10px;}
     .card:hover{transform:translateY(-5px)}
 
-    /* ABOUT IMAGEN */
     .about-img{
         width:200px;
         height:200px;
@@ -169,13 +147,21 @@
         padding:15px;
         border-radius:50px;
         text-decoration:none;
+        font-weight:600;
+    }
+
+    .contact-links a{
+        display:block;
+        margin-top:10px;
+        color:#0B2545;
+        text-decoration:none;
+        font-weight:600;
     }
 
 </style>
 </head>
 <body>
 
-<!-- NAV -->
 <div class="nav">
     <div><strong>Viri & Ana</strong></div>
     <div>
@@ -186,21 +172,18 @@
     </div>
 </div>
 
-<!-- HERO -->
 <div class="hero">
     <h1>Viri & Ana</h1>
     <p>Psicología y clases de inglés para transformar tu vida emocional y académica</p>
     <a class="btn" href="#booking">Agenda ahora</a>
 </div>
 
-<!-- ABOUT -->
 <section id="about">
     <h2>Sobre nosotros</h2>
-    <img class="about-img" src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2" alt="equipo">
+    <img class="about-img" src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2">
     <p>Acompañamos procesos emocionales y educativos con enfoque humano, práctico y cercano.</p>
 </section>
 
-<!-- SERVICES -->
 <section id="services">
     <h2>Servicios</h2>
     <div class="grid">
@@ -224,7 +207,6 @@
     </div>
 </section>
 
-<!-- BOOKING -->
 <section id="booking">
     <h2>Reserva tu clase</h2>
 
@@ -237,13 +219,22 @@
     </div>
 </section>
 
-<!-- FOOTER -->
+<section id="contact">
+    <h2>Contacto</h2>
+    <p>WhatsApp: 3053455976</p>
+
+    <div class="contact-links">
+        <a href="mailto:virimantez@gmail.com">📧 virimantez@gmail.com (Clases de inglés)</a>
+        <a href="mailto:acastano.suarez@gmail.com">📧 acastano.suarez@gmail.com (Psicología)</a>
+        <a href="https://www.facebook.com/share/1GnPHeLSkJ/?mibextid=wwXIfr" target="_blank">📘 Facebook</a>
+    </div>
+</section>
+
 <footer style="background:#0B2545;color:white;padding:20px;text-align:center;">
 © 2026 Viri & Ana
 </footer>
 
-<!-- WHATSAPP -->
-<a class="whatsapp" href="https://wa.me/5210000000000" target="_blank">WhatsApp</a>
+<a class="whatsapp" href="https://wa.me/523053455976" target="_blank">WhatsApp</a>
 
 <script>
 const sections = document.querySelectorAll('section');
@@ -261,7 +252,7 @@ function sendWhatsApp(){
     let time = document.getElementById('time').value;
     let msg = document.getElementById('msg').value;
 
-    let url = `https://wa.me/5210000000000?text=Hola%20soy%20${name}%20quiero%20reservar%20el%20${date}%20a%20las%20${time}.%20${msg}`;
+    let url = `https://wa.me/523053455976?text=Hola%20soy%20${name}%20quiero%20reservar%20el%20${date}%20a%20las%20${time}.%20${msg}`;
 
     window.open(url,'_blank');
 }
