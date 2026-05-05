@@ -6,14 +6,11 @@
 
 <title>Viri & Ana | Psicología y clases de inglés</title>
 
-<meta name="description" content="Psicología psicopedagógica, clases de inglés y talleres emocionales para niños, jóvenes y familias.">
-
 <style>
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
     background: #f4f7f9;
-    line-height: 1.6;
 }
 
 header {
@@ -24,21 +21,22 @@ header {
 }
 
 header img {
-    width: 120px;
-}
-
-header p {
-    color: #a8dadc;
+    width: 140px;
+    margin-bottom: 10px;
 }
 
 .btn {
     display: inline-block;
-    margin-top: 20px;
-    padding: 14px 28px;
+    margin: 10px;
+    padding: 12px 25px;
     background: #3CBCC3;
     color: white;
     text-decoration: none;
     border-radius: 30px;
+}
+
+.btn-facebook {
+    background: #1877F2;
 }
 
 section {
@@ -51,16 +49,10 @@ h2 {
     color: #0B2545;
 }
 
-.main-img {
-    width: 100%;
-    height: auto;
-    border-radius: 15px;
-}
-
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
+    gap: 20px;
 }
 
 .card {
@@ -72,43 +64,17 @@ h2 {
 
 .card img {
     width: 100%;
-    height: 220px;
-    object-fit: contain;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    background: #f4f7f9;
-}
-
-ul {
-    padding-left: 18px;
-}
-
-/* TALLERES */
-.taller {
-    background: white;
-    padding: 20px;
-    border-left: 6px solid #3CBCC3;
     border-radius: 12px;
-    margin-bottom: 20px;
-}
-
-/* TESTIMONIOS */
-.testimonial {
-    background: white;
-    padding: 18px;
-    border-left: 5px solid #3CBCC3;
     margin-bottom: 15px;
-    border-radius: 10px;
-    font-size: 0.95em;
 }
 
-footer {
-    background: #0B2545;
-    color: white;
-    text-align: center;
-    padding: 20px;
+/* GALERÍA */
+.gallery img {
+    width: 100%;
+    border-radius: 15px;
 }
 
+/* WhatsApp */
 .whatsapp {
     position: fixed;
     bottom: 20px;
@@ -125,25 +91,28 @@ footer {
 <body>
 
 <header>
-    <img src="logo.png">
+    <img src="logo.png" alt="Logo Viri & Ana">
     <h1>Viri & Ana</h1>
     <p>Bienestar emocional y aprendizaje con sentido</p>
 
-    <a href="https://wa.me/523053455976?text=Hola,%20quiero%20información%20sobre%20sus%20servicios" class="btn">
-        Agenda tu asesoría
+    <a href="https://wa.me/523053455976" class="btn">Agenda tu asesoría</a>
+
+    <a href="https://www.facebook.com/share/1GnPHeLSkJ/?mibextid=wwXIfr" class="btn btn-facebook" target="_blank">
+        Facebook
     </a>
 </header>
-
-<section>
-    <img src="hero.jpg" class="main-img">
-</section>
 
 <section>
     <h2>¿Qué hacemos?</h2>
     <p>
         Acompañamos procesos de aprendizaje y desarrollo emocional de forma integral,
-        ayudando a niños, jóvenes y familias a crecer con seguridad, confianza y herramientas reales.
+        ayudando a niños, jóvenes y familias.
     </p>
+</section>
+
+<!-- IMAGEN PRINCIPAL -->
+<section class="gallery">
+    <img src="imagen4.jpg" alt="Clases y psicología">
 </section>
 
 <section>
@@ -152,100 +121,49 @@ footer {
     <div class="grid">
 
         <div class="card">
-            <img src="psicologia.jpg">
+            <img src="imagen1.jpg">
             <h3>Psicología Psicopedagógica</h3>
-            <ul>
-                <li>✔ Hábitos de estudio</li>
-                <li>✔ Atención y concentración</li>
-                <li>✔ Acompañamiento emocional</li>
-                <li>✔ Desarrollo de autoestima</li>
-                <li>✔ Organización académica</li>
-            </ul>
+            <p>Atención emocional, autoestima y desarrollo personal.</p>
         </div>
 
         <div class="card">
-            <img src="ingles.jpg">
+            <img src="imagen2.jpg">
             <h3>Clases de Inglés</h3>
-            <ul>
-                <li>✔ Aprendizaje con juegos</li>
-                <li>✔ Clases dinámicas</li>
-                <li>✔ Adaptadas al niño</li>
-                <li>✔ Resultados reales</li>
-            </ul>
+            <p>Aprendizaje dinámico, divertido y efectivo.</p>
         </div>
 
         <div class="card">
-            <img src="servicios.png">
-            <h3>Atención en Línea</h3>
-            <ul>
-                <li>✔ Flexibilidad</li>
-                <li>✔ Acompañamiento continuo</li>
-                <li>✔ Comunicación con padres</li>
-            </ul>
+            <img src="imagen3.jpg">
+            <h3>Talleres Familiares</h3>
+            <p>Conexión emocional y crecimiento en familia.</p>
         </div>
 
     </div>
 </section>
 
-<!-- 🔥 NUEVA SECCIÓN DE TALLERES -->
 <section>
-    <h2>Talleres</h2>
+    <h2>Clases de Inglés</h2>
 
-    <div class="taller">
-        <h3>“Aunque el tiempo sea poco: cómo conectar con tus hijos de verdad”</h3>
-        <p>
-            Un espacio para madres y padres que buscan mejorar la conexión emocional con sus hijos,
-            incluso en medio de la rutina diaria.
-        </p>
-        <ul>
-            <li>✔ Estrategias reales de conexión</li>
-            <li>✔ Comunicación emocional efectiva</li>
-            <li>✔ Tiempo de calidad con intención</li>
-        </ul>
+    <div class="grid">
+
+        <div class="card">
+            <h3>Clases Grupales</h3>
+            <p>Aprendizaje colaborativo y motivador con otros estudiantes.</p>
+        </div>
+
+        <div class="card">
+            <h3>Clases para Adultos</h3>
+            <p>Enfoque práctico para comunicación real y confianza.</p>
+        </div>
+
     </div>
-
-    <div class="taller">
-        <h3>“Ser yo… sin cansarme de explicarme”</h3>
-        <p>
-            Taller enfocado en identidad, autoestima y expresión personal,
-            especialmente para jóvenes que buscan sentirse seguros siendo ellos mismos.
-        </p>
-        <ul>
-            <li>✔ Autoaceptación</li>
-            <li>✔ Identidad personal</li>
-            <li>✔ Seguridad emocional</li>
-            <li>✔ Espacio libre de juicio</li>
-        </ul>
-    </div>
-
 </section>
 
-<section>
-    <h2>Testimonios</h2>
-
-    <div class="testimonial">“Mi hijo ahora disfruta aprender.”</div>
-    <div class="testimonial">“Se siente más seguro.”</div>
-    <div class="testimonial">“Ha mejorado muchísimo.”</div>
-    <div class="testimonial">“Excelente acompañamiento.”</div>
-    <div class="testimonial">“Muy profesional y cercana.”</div>
-    <div class="testimonial">“Se nota el cambio en su actitud.”</div>
-    <div class="testimonial">“Aprende sin presión.”</div>
-    <div class="testimonial">“Muy recomendada.”</div>
-
-</section>
-
-<section>
-    <h2>Contacto</h2>
-    <p>📲 3053455976</p>
-    <p>📧 Psicología: acastano.suarez@gmail.com</p>
-    <p>📧 Inglés: virimantez@gmail.com</p>
-</section>
-
-<footer>
-    <p>© 2026 Viri & Ana</p>
+<footer style="background:#0B2545;color:white;text-align:center;padding:20px;">
+    ©️ 2026 Viri & Ana
 </footer>
 
-<a href="https://wa.me/523053455976?text=Hola,%20quiero%20información" class="whatsapp">💬</a>
+<a href="https://wa.me/523053455976" class="whatsapp">💬</a>
 
 </body>
 </html>
