@@ -6,25 +6,25 @@
 
 <title>Viri & Ana | Psicología y clases de inglés</title>
 
-<meta name="description" content="Atención psicopedagógica y clases de inglés para niños. Acompañamiento emocional, aprendizaje personalizado y resultados reales.">
+<meta name="description" content="Psicología psicopedagógica, clases de inglés y talleres emocionales para niños, jóvenes y familias.">
 
 <style>
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
     background: #f4f7f9;
+    line-height: 1.6;
 }
 
 header {
     background: linear-gradient(135deg, #0B2545, #1b3a6b);
     color: white;
     text-align: center;
-    padding: 80px 20px;
+    padding: 60px 20px;
 }
 
 header img {
     width: 120px;
-    margin-bottom: 15px;
 }
 
 header p {
@@ -41,60 +41,67 @@ header p {
     border-radius: 30px;
 }
 
-/* SECCIONES */
 section {
     max-width: 1100px;
     margin: auto;
-    padding: 60px 20px;
+    padding: 50px 20px;
 }
 
 h2 {
     color: #0B2545;
 }
 
-/* IMAGEN PRINCIPAL */
 .main-img {
     width: 100%;
+    height: auto;
     border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
-/* GRID */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
 }
 
-/* CARDS */
 .card {
     background: white;
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
 
 .card img {
     width: 100%;
+    height: 220px;
+    object-fit: contain;
     border-radius: 10px;
     margin-bottom: 15px;
+    background: #f4f7f9;
+}
+
+ul {
+    padding-left: 18px;
+}
+
+/* TALLERES */
+.taller {
+    background: white;
+    padding: 20px;
+    border-left: 6px solid #3CBCC3;
+    border-radius: 12px;
+    margin-bottom: 20px;
 }
 
 /* TESTIMONIOS */
 .testimonial {
     background: white;
-    padding: 20px;
+    padding: 18px;
     border-left: 5px solid #3CBCC3;
     margin-bottom: 15px;
     border-radius: 10px;
+    font-size: 0.95em;
 }
 
-/* FOOTER */
 footer {
     background: #0B2545;
     color: white;
@@ -102,7 +109,6 @@ footer {
     padding: 20px;
 }
 
-/* WHATSAPP */
 .whatsapp {
     position: fixed;
     bottom: 20px;
@@ -123,26 +129,23 @@ footer {
     <h1>Viri & Ana</h1>
     <p>Bienestar emocional y aprendizaje con sentido</p>
 
-    <a href="https://wa.me/523053455976?text=Hola,%20quiero%20agendar%20una%20asesoría" class="btn">
+    <a href="https://wa.me/523053455976?text=Hola,%20quiero%20información%20sobre%20sus%20servicios" class="btn">
         Agenda tu asesoría
     </a>
 </header>
 
-<!-- HERO -->
 <section>
     <img src="hero.jpg" class="main-img">
 </section>
 
-<!-- INTRO -->
 <section>
-    <h2>Un acompañamiento diferente</h2>
+    <h2>¿Qué hacemos?</h2>
     <p>
-        Integramos psicología y educación para generar cambios reales en el aprendizaje,
-        la confianza y el bienestar emocional.
+        Acompañamos procesos de aprendizaje y desarrollo emocional de forma integral,
+        ayudando a niños, jóvenes y familias a crecer con seguridad, confianza y herramientas reales.
     </p>
 </section>
 
-<!-- SERVICIOS -->
 <section>
     <h2>Servicios</h2>
 
@@ -151,51 +154,91 @@ footer {
         <div class="card">
             <img src="psicologia.jpg">
             <h3>Psicología Psicopedagógica</h3>
-            <p>
-                Acompañamiento emocional, hábitos de estudio, atención y desarrollo de la confianza.
-            </p>
+            <ul>
+                <li>✔ Hábitos de estudio</li>
+                <li>✔ Atención y concentración</li>
+                <li>✔ Acompañamiento emocional</li>
+                <li>✔ Desarrollo de autoestima</li>
+                <li>✔ Organización académica</li>
+            </ul>
         </div>
 
         <div class="card">
             <img src="ingles.jpg">
-            <h3>Clases de Inglés para Niños</h3>
-            <p>
-                Clases dinámicas, creativas y personalizadas enfocadas en resultados reales.
-            </p>
+            <h3>Clases de Inglés</h3>
+            <ul>
+                <li>✔ Aprendizaje con juegos</li>
+                <li>✔ Clases dinámicas</li>
+                <li>✔ Adaptadas al niño</li>
+                <li>✔ Resultados reales</li>
+            </ul>
         </div>
 
         <div class="card">
             <img src="servicios.png">
-            <h3>Atención Integral</h3>
-            <p>
-                Acompañamiento cercano, flexible y adaptado a cada familia.
-            </p>
+            <h3>Atención en Línea</h3>
+            <ul>
+                <li>✔ Flexibilidad</li>
+                <li>✔ Acompañamiento continuo</li>
+                <li>✔ Comunicación con padres</li>
+            </ul>
         </div>
 
     </div>
 </section>
 
-<!-- TESTIMONIOS -->
+<!-- 🔥 NUEVA SECCIÓN DE TALLERES -->
 <section>
-    <h2>Testimonios</h2>
+    <h2>Talleres</h2>
 
-    <div class="testimonial">
-        “Mi hijo ahora disfruta aprender y ha mejorado muchísimo.”
+    <div class="taller">
+        <h3>“Aunque el tiempo sea poco: cómo conectar con tus hijos de verdad”</h3>
+        <p>
+            Un espacio para madres y padres que buscan mejorar la conexión emocional con sus hijos,
+            incluso en medio de la rutina diaria.
+        </p>
+        <ul>
+            <li>✔ Estrategias reales de conexión</li>
+            <li>✔ Comunicación emocional efectiva</li>
+            <li>✔ Tiempo de calidad con intención</li>
+        </ul>
     </div>
 
-    <div class="testimonial">
-        “Se nota el cambio en su confianza y organización.”
+    <div class="taller">
+        <h3>“Ser yo… sin cansarme de explicarme”</h3>
+        <p>
+            Taller enfocado en identidad, autoestima y expresión personal,
+            especialmente para jóvenes que buscan sentirse seguros siendo ellos mismos.
+        </p>
+        <ul>
+            <li>✔ Autoaceptación</li>
+            <li>✔ Identidad personal</li>
+            <li>✔ Seguridad emocional</li>
+            <li>✔ Espacio libre de juicio</li>
+        </ul>
     </div>
 
 </section>
 
-<!-- CONTACTO -->
+<section>
+    <h2>Testimonios</h2>
+
+    <div class="testimonial">“Mi hijo ahora disfruta aprender.”</div>
+    <div class="testimonial">“Se siente más seguro.”</div>
+    <div class="testimonial">“Ha mejorado muchísimo.”</div>
+    <div class="testimonial">“Excelente acompañamiento.”</div>
+    <div class="testimonial">“Muy profesional y cercana.”</div>
+    <div class="testimonial">“Se nota el cambio en su actitud.”</div>
+    <div class="testimonial">“Aprende sin presión.”</div>
+    <div class="testimonial">“Muy recomendada.”</div>
+
+</section>
+
 <section>
     <h2>Contacto</h2>
     <p>📲 3053455976</p>
     <p>📧 Psicología: acastano.suarez@gmail.com</p>
     <p>📧 Inglés: virimantez@gmail.com</p>
-    <p>📍 Atención 100% en línea</p>
 </section>
 
 <footer>
