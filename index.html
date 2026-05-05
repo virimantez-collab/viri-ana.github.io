@@ -80,7 +80,10 @@
         transition:all 0.8s ease;
     }
 
-    section.show{opacity:1;transform:translateY(0);}
+    section.show{
+        opacity:1;
+        transform:translateY(0);
+    }
 
     h2{color:#0B2545;margin-bottom:20px;}
 
@@ -221,7 +224,7 @@
 
 <section id="contact">
     <h2>Contacto</h2>
-    <p>WhatsApp: 3053455976</p>
+    <p>WhatsApp: 3053455976 (Colombia)</p>
 
     <div class="contact-links">
         <a href="mailto:virimantez@gmail.com">📧 virimantez@gmail.com (Clases de inglés)</a>
@@ -234,7 +237,8 @@
 © 2026 Viri & Ana
 </footer>
 
-<a class="whatsapp" href="https://wa.me/523053455976" target="_blank">WhatsApp</a>
+<!-- WHATSAPP CORRECTO COLOMBIA -->
+<a class="whatsapp" href="https://wa.me/573053455976" target="_blank">WhatsApp</a>
 
 <script>
 const sections = document.querySelectorAll('section');
@@ -252,7 +256,7 @@ function sendWhatsApp(){
     let time = document.getElementById('time').value;
     let msg = document.getElementById('msg').value;
 
-    let url = `https://wa.me/523053455976?text=Hola%20soy%20${name}%20quiero%20reservar%20el%20${date}%20a%20las%20${time}.%20${msg}`;
+    let url = `https://wa.me/573053455976?text=Hola%20soy%20${name}%20quiero%20reservar%20el%20${date}%20a%20las%20${time}.%20${msg}`;
 
     window.open(url,'_blank');
 }
