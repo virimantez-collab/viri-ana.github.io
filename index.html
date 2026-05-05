@@ -3,167 +3,185 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Viri & Ana | Psicología y Clases de Inglés</title>
 
-<title>Viri & Ana | Psicología y clases de inglés</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: #f4f7f9;
-}
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:'Poppins', sans-serif;
+        scroll-behavior:smooth;
+    }
 
-header {
-    background: linear-gradient(135deg, #0B2545, #1b3a6b);
-    color: white;
-    text-align: center;
-    padding: 60px 20px;
-}
+    body{
+        background:#f4f7fb;
+        color:#1f2d3d;
+    }
 
-header img {
-    width: 140px;
-    margin-bottom: 10px;
-}
+    /* NAV */
+    .nav{
+        position:fixed;
+        top:0;
+        width:100%;
+        background:rgba(11,37,69,0.95);
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:15px 30px;
+        color:white;
+        z-index:1000;
+    }
 
-.btn {
-    display: inline-block;
-    margin: 10px;
-    padding: 12px 25px;
-    background: #3CBCC3;
-    color: white;
-    text-decoration: none;
-    border-radius: 30px;
-}
+    .nav a{
+        color:white;
+        margin-left:15px;
+        text-decoration:none;
+        font-size:0.9rem;
+    }
 
-.btn-facebook {
-    background: #1877F2;
-}
+    /* HERO */
+    .hero{
+        height:100vh;
+        background:linear-gradient(135deg,#0B2545,#1d4ed8);
+        color:white;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+        padding:20px;
+    }
 
-section {
-    max-width: 1100px;
-    margin: auto;
-    padding: 50px 20px;
-}
+    .hero h1{
+        font-size:3rem;
+    }
 
-h2 {
-    color: #0B2545;
-}
+    .hero p{
+        margin-top:10px;
+        max-width:600px;
+    }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-}
+    .btn{
+        margin-top:20px;
+        padding:12px 25px;
+        background:#22c55e;
+        color:white;
+        border:none;
+        border-radius:30px;
+        text-decoration:none;
+        font-weight:600;
+        transition:0.3s;
+    }
 
-.card {
-    background: white;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-}
+    .btn:hover{transform:scale(1.05)}
 
-.card img {
-    width: 100%;
-    border-radius: 12px;
-    margin-bottom: 15px;
-}
+    section{
+        padding:90px 20px;
+        text-align:center;
+        opacity:0;
+        transform:translateY(40px);
+        transition:all 0.8s ease;
+    }
 
-/* GALERÍA */
-.gallery img {
-    width: 100%;
-    border-radius: 15px;
-}
+    section.show{
+        opacity:1;
+        transform:translateY(0);
+    }
 
-/* WhatsApp */
-.whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25D366;
-    color: white;
-    font-size: 26px;
-    padding: 16px;
-    border-radius: 50%;
-}
+    h2{
+        color:#0B2545;
+        margin-bottom:20px;
+    }
+
+    .grid{
+        display:flex;
+        justify-content:center;
+        gap:20px;
+        flex-wrap:wrap;
+        margin-top:30px;
+    }
+
+    .card{
+        background:white;
+        padding:25px;
+        border-radius:15px;
+        width:280px;
+        box-shadow:0 10px 25px rgba(0,0,0,0.08);
+        transition:0.3s;
+    }
+
+    .card:hover{transform:translateY(-5px)}
+
+    input, textarea{
+        padding:12px;
+        border:1px solid #ddd;
+        border-radius:8px;
+        width:100%;
+    }
+
+    .form{
+        max-width:500px;
+        margin:auto;
+        display:flex;
+        flex-direction:column;
+        gap:10px;
+    }
+
+    button{
+        background:#0B2545;
+        color:white;
+        padding:12px;
+        border:none;
+        border-radius:8px;
+        cursor:pointer;
+    }
+
+    .whatsapp{
+        position:fixed;
+        bottom:20px;
+        right:20px;
+        background:#25D366;
+        color:white;
+        padding:15px;
+        border-radius:50px;
+        text-decoration:none;
+    }
+
 </style>
 </head>
-
 <body>
 
-<header>
-    <img src="logo.png" alt="Logo Viri & Ana">
+<!-- NAV -->
+<div class="nav">
+    <div><strong>Viri & Ana</strong></div>
+    <div>
+        <a href="#about">Nosotros</a>
+        <a href="#services">Servicios</a>
+        <a href="#booking">Reservas</a>
+        <a href="#contact">Contacto</a>
+    </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
     <h1>Viri & Ana</h1>
-    <p>Bienestar emocional y aprendizaje con sentido</p>
+    <p>Psicología y clases de inglés para transformar tu vida emocional y académica</p>
+    <a class="btn" href="#booking">Agenda ahora</a>
+</div>
 
-    <a href="https://wa.me/523053455976" class="btn">Agenda tu asesoría</a>
-
-    <a href="https://www.facebook.com/share/1GnPHeLSkJ/?mibextid=wwXIfr" class="btn btn-facebook" target="_blank">
-        Facebook
-    </a>
-</header>
-
-<section>
-    <h2>¿Qué hacemos?</h2>
-    <p>
-        Acompañamos procesos de aprendizaje y desarrollo emocional de forma integral,
-        ayudando a niños, jóvenes y familias.
-    </p>
+<!-- ABOUT -->
+<section id="about">
+    <h2>Sobre nosotros</h2>
+    <p>Acompañamos procesos emocionales y educativos con enfoque humano, práctico y cercano.</p>
 </section>
 
-<!-- IMAGEN PRINCIPAL -->
-<section class="gallery">
-    <img src="imagen4.jpg" alt="Clases y psicología">
-</section>
-
-<section>
+<!-- SERVICES -->
+<section id="services">
     <h2>Servicios</h2>
-
     <div class="grid">
-
-        <div class="card">
-            <img src="imagen1.jpg">
-            <h3>Psicología Psicopedagógica</h3>
-            <p>Atención emocional, autoestima y desarrollo personal.</p>
-        </div>
-
-        <div class="card">
-            <img src="imagen2.jpg">
-            <h3>Clases de Inglés</h3>
-            <p>Aprendizaje dinámico, divertido y efectivo.</p>
-        </div>
-
-        <div class="card">
-            <img src="imagen3.jpg">
-            <h3>Talleres Familiares</h3>
-            <p>Conexión emocional y crecimiento en familia.</p>
-        </div>
-
-    </div>
-</section>
-
-<section>
-    <h2>Clases de Inglés</h2>
-
-    <div class="grid">
-
-        <div class="card">
-            <h3>Clases Grupales</h3>
-            <p>Aprendizaje colaborativo y motivador con otros estudiantes.</p>
-        </div>
-
-        <div class="card">
-            <h3>Clases para Adultos</h3>
-            <p>Enfoque práctico para comunicación real y confianza.</p>
-        </div>
-
-    </div>
-</section>
-
-<footer style="background:#0B2545;color:white;text-align:center;padding:20px;">
-    ©️ 2026 Viri & Ana
-</footer>
-
-<a href="https://wa.me/523053455976" class="whatsapp">💬</a>
-
-</body>
-</html>
+        <div class="card"><h3>Psicología</h3><p>Terapia individual y acompañamiento emocional.</p></div>
+        <div class="card"><h3>Inglés</h3><p>Clases dinámicas desde nivel básico hasta avanzado.</p></div>
+        <div class="card"><h3>Talleres</h3><p>Desarrollo person
