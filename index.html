@@ -42,10 +42,12 @@
         font-size:0.9rem;
     }
 
-    /* HERO */
+    /* HERO CON IMAGEN */
     .hero{
         height:100vh;
-        background:linear-gradient(135deg,#0B2545,#1d4ed8);
+        background:
+        linear-gradient(rgba(11,37,69,0.6), rgba(29,78,216,0.6)),
+        url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f') center/cover;
         color:white;
         display:flex;
         flex-direction:column;
@@ -113,7 +115,26 @@
         transition:0.3s;
     }
 
+    .card img{
+        width:100%;
+        height:160px;
+        object-fit:cover;
+        border-radius:12px;
+        margin-bottom:10px;
+    }
+
     .card:hover{transform:translateY(-5px)}
+
+    /* ABOUT IMAGEN */
+    .about-img{
+        width:200px;
+        height:200px;
+        border-radius:50%;
+        object-fit:cover;
+        margin:20px auto;
+        display:block;
+        box-shadow:0 10px 20px rgba(0,0,0,0.2);
+    }
 
     input, textarea{
         padding:12px;
@@ -175,6 +196,7 @@
 <!-- ABOUT -->
 <section id="about">
     <h2>Sobre nosotros</h2>
+    <img class="about-img" src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2" alt="equipo">
     <p>Acompañamos procesos emocionales y educativos con enfoque humano, práctico y cercano.</p>
 </section>
 
@@ -182,6 +204,68 @@
 <section id="services">
     <h2>Servicios</h2>
     <div class="grid">
-        <div class="card"><h3>Psicología</h3><p>Terapia individual y acompañamiento emocional.</p></div>
-        <div class="card"><h3>Inglés</h3><p>Clases dinámicas desde nivel básico hasta avanzado.</p></div>
-        <div class="card"><h3>Talleres</h3><p>Desarrollo person
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1573497019418-b400bb3ab074">
+            <h3>Psicología</h3>
+            <p>Terapia individual y acompañamiento emocional.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
+            <h3>Inglés</h3>
+            <p>Clases dinámicas desde nivel básico hasta avanzado.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d">
+            <h3>Talleres</h3>
+            <p>Desarrollo personal y habilidades sociales.</p>
+        </div>
+    </div>
+</section>
+
+<!-- BOOKING -->
+<section id="booking">
+    <h2>Reserva tu clase</h2>
+
+    <div class="form">
+        <input id="name" type="text" placeholder="Nombre">
+        <input id="date" type="date">
+        <input id="time" type="time">
+        <textarea id="msg" placeholder="Escribe tu solicitud"></textarea>
+        <button onclick="sendWhatsApp()">Reservar por WhatsApp</button>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background:#0B2545;color:white;padding:20px;text-align:center;">
+© 2026 Viri & Ana
+</footer>
+
+<!-- WHATSAPP -->
+<a class="whatsapp" href="https://wa.me/5210000000000" target="_blank">WhatsApp</a>
+
+<script>
+const sections = document.querySelectorAll('section');
+window.addEventListener('scroll', () => {
+    sections.forEach(sec => {
+        if(sec.getBoundingClientRect().top < window.innerHeight - 100){
+            sec.classList.add('show');
+        }
+    });
+});
+
+function sendWhatsApp(){
+    let name = document.getElementById('name').value;
+    let date = document.getElementById('date').value;
+    let time = document.getElementById('time').value;
+    let msg = document.getElementById('msg').value;
+
+    let url = `https://wa.me/5210000000000?text=Hola%20soy%20${name}%20quiero%20reservar%20el%20${date}%20a%20las%20${time}.%20${msg}`;
+
+    window.open(url,'_blank');
+}
+</script>
+
+</body>
+</html>
